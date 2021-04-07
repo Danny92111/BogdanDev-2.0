@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: var(--font);
+}
+body,
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.App {
+	width: 100%;
+	text-align: left;
+	margin: 0px auto;
+}
+.fix-header {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -170px;
+	left: 0;
+	z-index: 999;
+}
+/* Color palletes */
+
+/* :root {
+	--one: #7d30fa;
+	--two: #f8b53a;
+	--three: #ffec41;
+	--four: #f8425f;
+	--five: #2d4059;
+} */
+
+:root {
+	--one: #0e3658;
+	--two: #165081;
+	--three: #fc3c3c;
+	--four: #29abf4;
+	--five: #ffffff;
+}
+/* --------- Pallete 3 ------------
+:root {
+  --one:#102754;
+  --two:#453cc9;
+  --three:#22aff1;
+  --four:#d4e8ff;
+  --five:#ffffff;
+} */
+/* --------- Pallete 4 ------------
+:root {
+  --one:#474242;
+  --two:#ee7070;
+  --three:#fcea9a;
+  --four:#b8f0c8;
+  --five:#d4e8ff;
+} */
+/* --------- Pallete 5 ------------
+:root {
+  --one:#143959;
+  --two:#1f7396;
+  --three:#27d3a8;
+  --four:#f8e7ae;
+  --five:#ffffff;
+} */
+@media only screen and (max-width: 916px) {
+	.fix-header {
+		top: -130px;
+	}
+}

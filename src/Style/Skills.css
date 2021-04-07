@@ -1,0 +1,164 @@
+.Skills_MainContainer,
+.Services__MainContainer {
+	width: 100vw;
+	background-color: var(--three);
+	border-bottom: 2px solid var(--five);
+	padding: 40px 0;
+	position: relative;
+}
+.Skills__container,
+.Services__container {
+	width: 960px;
+	max-width: 960px;
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.paralax {
+	background-image: url("../Media/background-paralax.jpg");
+	min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.Skills_SkillsetContainer,
+.Services__minicontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.Skill_MiniContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Skill__Name {
+}
+.Skill__container,
+.Service__container {
+	border: none;
+	width: 40%;
+	margin: 40px 0;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 40px;
+}
+.Service__container {
+	background: rgba(255, 255, 255, 0.4);
+}
+.Skills_title {
+	margin: 20px 0;
+	color: var(--four);
+	font-size: 2.3rem;
+}
+.Services__title {
+	margin: 20px 0;
+	color: #000000;
+	font-size: 2.3rem;
+}
+
+.Skill__Logo {
+	margin: 30px 0;
+	object-fit: cover;
+	width: 100px;
+}
+.Skill__ProgressbarContainer {
+	margin-bottom: 0;
+}
+.Skill__container .MuiLinearProgress-root {
+	height: 20px;
+}
+.Skill__container .MuiTypography-body2 {
+	font-size: 1.2rem;
+	color: var(--five);
+	font-weight: 600;
+	opacity: 0.8;
+}
+.Skill__container > .MuiBox-root {
+	padding: 12px 20px;
+}
+.Skill__container .MuiLinearProgress-barColorPrimary {
+	/* background-color: var(--four); */
+}
+.Service__miniWrapper {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Service__description {
+	margin: 20px 10px;
+	padding: 5px;
+}
+.Service__title {
+	color: black;
+}
+.Service__Logo {
+	color: var(--five);
+	object-fit: contain;
+	width: 50px;
+}
+.Service__description {
+	line-height: 170%;
+	font-size: 1.2rem;
+	color: black;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+@media only screen and (max-width: 942px) {
+	.Skills__container,
+	.Services__container {
+		width: 100vw;
+	}
+	.Service__description {
+		font-size: 1rem;
+		letter-spacing: 0;
+		line-height: 160%;
+	}
+	.Service__Logo {
+		width: 40px;
+	}
+	.Skill__Logo {
+		margin: 25px 0;
+		width: 80px;
+	}
+}
+@media only screen and (max-width: 651px) {
+	.Service__container {
+		width: 80%;
+		background: rgba(255, 255, 255, 0.7);
+	}
+	.Service__miniWrapper {
+		flex-flow: row;
+	}
+	.Service__Logo {
+		width: 35px;
+	}
+	.Service__title {
+		font-size: 1.2rem;
+	}
+}
+@media only screen and (max-width: 520px) {
+	.Skill__container .MuiTypography-body2 {
+		display: none;
+	}
+	.Skill__container > .MuiBox-root {
+		width: 80%;
+		left: 10%;
+		position: relative;
+	}
+	.Skill__container .MuiLinearProgress-root {
+		height: 11px;
+	}
+	.Skill__Logo {
+		margin: 13px 0;
+		width: 60px;
+	}
+	.Skill__container {
+		width: 34%;
+	}
+}

@@ -1,0 +1,114 @@
+.About__MainContainer {
+	width: 100vw;
+	background-color: var(--three);
+	border-bottom: 2px solid var(--five);
+	padding: 40px 0;
+	position: relative;
+}
+.About__container {
+	width: 960px;
+	max-width: 960px;
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--three);
+	justify-content: space-around;
+}
+.About__picture {
+	width: 120px;
+	height: 120px;
+	object-fit: contain;
+	border-radius: 50%;
+	position: relative;
+	top: 70px;
+}
+.paralax {
+	background-image: url("../Media/background-paralax.jpg");
+	min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.About__textContainer {
+	width: calc(80% - 100px);
+}
+.About__Title {
+	margin: 20px 0;
+	color: var(--four);
+}
+.About__descr,
+.About__ContactDetails {
+	line-height: 220%;
+	font-size: large;
+	color: var(--five);
+	letter-spacing: 1px;
+}
+.About__ContactContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.About__resumeContainer {
+	display: flex;
+	align-items: center;
+	padding: 0.35em 1.2em;
+	border: 0.1em solid var(--four);
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--five);
+	font-weight: 300;
+	background-color: var(--four);
+	text-align: center;
+	transition: all 0.2s;
+}
+.About__resumeContainer:hover {
+	color: var(--one);
+	background-color: var(--five);
+	cursor: pointer;
+}
+.About__resumeContainer > h3 {
+	margin-left: 5px;
+	line-height: 200%;
+	color: var(--one);
+}
+@media only screen and (max-width: 942px) {
+	.About__container {
+		width: 100vw;
+	}
+	.About__picture {
+		width: 90px;
+		height: 90px;
+	}
+	.About__textContainer {
+		width: calc(90vw - 100px);
+	}
+}
+@media only screen and (max-width: 651px) {
+	.About__ContactContainer {
+		align-items: start;
+		flex-flow: column;
+	}
+	.About__picture {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 0;
+		right: 15px;
+	}
+	.About__ContactDetails {
+		margin: 25px 0;
+	}
+	.About__descr,
+	.About__ContactDetails {
+		font-size: medium;
+		line-height: 200%;
+	}
+	.About__textContainer {
+		width: 90vw;
+	}
+}
