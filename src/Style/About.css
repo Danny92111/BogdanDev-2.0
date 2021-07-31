@@ -66,6 +66,9 @@
 	text-align: center;
 	transition: all 0.2s;
 }
+.About__resumeContainer a {
+	color: inherit;
+}
 .About__resumeContainer:hover {
 	color: var(--one);
 	background-color: var(--five);

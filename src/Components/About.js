@@ -2,6 +2,7 @@ import React from "react";
 import "../Style/About.css";
 import PicAbout from "../Style/Pic__About.jpg";
 import GetAppIcon from "@material-ui/icons/GetApp";
+import CV from "../Media/CV Bogdan D.pdf";
 
 function About() {
 	return (
@@ -31,7 +32,9 @@ function About() {
 						</div>
 						<div className="About__resumeContainer">
 							<GetAppIcon />
-							<h3>Download resume</h3>
+							<a href={CV} target="_blank">
+								<h3>Download resume</h3>
+							</a>
 						</div>
 					</div>
 				</div>
