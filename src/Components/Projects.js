@@ -8,6 +8,7 @@ import AmazonClone from "../Media/Thumbnails/Amazon_Clone.jpeg";
 import NetflixClone from "../Media/Thumbnails/Netflix_Clone.jpeg";
 import WhatsAppClone from "../Media/Thumbnails/Whatsapp_Clone.jpeg";
 import LinkedInClone from "../Media/Thumbnails/Linked_In.jpeg";
+import Tota from "../Media/Thumbnails/Tota_Builders_Ltd.jpeg";
 
 function Projects() {
 	const [ThumbnailCommercial, SetThumbnail] = useState(1);
@@ -39,6 +40,16 @@ function Projects() {
 								!ThumbnailCommercial && "go-left"
 							}`}
 						>
+							<div className="Projects__HoverContainer">
+								<img
+									src={Tota}
+									alt=""
+									className="Projects__Thumbnail ThumbTota"
+								/>
+								<a href="https://www.totabuildersltd.co.uk/" target="blank">
+									Visit Website
+								</a>
+							</div>
 							<div className="Projects__HoverContainer">
 								<img
 									src={Oxford}
