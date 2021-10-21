@@ -61,6 +61,18 @@
 			rel="stylesheet"
 		/>
 		<title>Web development</title>
+
+		<script>
+			(function (d, s, id) {
+				if (d.getElementById(id)) return;
+				var t = d.getElementsByTagName(s)[0];
+				var vis = d.createElement(s);
+				vis.id = id;
+				vis.src =
+					"https://app-api.vidjet.io/generator.js?siteId=c231cd64-6a9a-4731-8dd7-c856d0d42e8c";
+				t.parentNode.insertBefore(vis, t);
+			})(document, "script", "vidjet");
+		</script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
