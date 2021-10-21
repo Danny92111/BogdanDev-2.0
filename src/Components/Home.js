@@ -8,18 +8,6 @@ import EmailIcon from "@material-ui/icons/Email";
 import MetaImg from "../Media/img-OG-metaTags.jpg";
 
 function Home() {
-	// script
-	(function (d, s, id) {
-		if (d.getElementById(id)) return;
-		var t = d.getElementsByTagName(s)[0];
-		var vis = d.createElement(s);
-		vis.id = id;
-		vis.src =
-			"https://app-api.vidjet.io/generator.js?siteId=c231cd64-6a9a-4731-8dd7-c856d0d42e8c";
-		t.parentNode.insertBefore(vis, t);
-	})(document, "script", "vidjet");
-
-	// script
 	return (
 		<div id="Home" className="Home__container">
 			<div className="Home__miniContainer">
